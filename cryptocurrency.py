@@ -126,6 +126,7 @@ class BlockChain(Node):
             print("Received chain is not bigger than current one, so current one will be kept")
             return False    
 
+
     def repr_json(self):
         return {
             "blocks": [block.repr_json() for block in self.blocks],
